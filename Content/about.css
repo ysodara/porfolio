@@ -1,0 +1,67 @@
+﻿Set padding to keep content from hitting the edges
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+Override the default bootstrap behavior where horizontal description lists
+will truncate terms that are too long to fit in the left column
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+Set width on the form input elements since they're 100% wide by default
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+#left {
+    padding-top:20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #left{
+    position:unset;
+    }
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 500px;
+    max-width: 300px;
+    margin: 30px auto auto auto;
+    text-align: center;
+    font-family: arial;
+}
+
+#history-lable{
+    display:none;
+}
+
+
+
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
+img{
+    width:100%;
+    height:auto;
+}

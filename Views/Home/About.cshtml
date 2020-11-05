@@ -1,0 +1,123 @@
+﻿@{
+    Layout = "~/Views/Shared/_aboutLayout.cshtml";
+    ViewBag.Title = "About";
+}
+
+<div class="row">
+    <div class="col-sm-3" id="left">
+        <div class="card">
+            <img img id="profilePic" alt="Profile Pictures" style="width:100%">
+            <a id="nameLink"><h1 id="fullName"></h1></a>
+            <div id="userName"></div>
+            <div id="email"></div>
+            <div id="school"></div>
+            <div id="schoolLocation"></div>
+
+        </div>
+    </div>
+    <div class="col-sm-7" style="margin-top: 50px;">
+        <section id="repo">
+            <div class="container">
+                <div class="jumbotron">
+                    <div class="row" id="thePlot">
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <div class="container" id="history-table">
+                <h2 id="history-lable">Commits History</h2>
+                <div id="commitsDiv">
+                    <table class="table" style="width:100%;height:100px;">
+                        <tr id="header">
+                        </tr>
+                    </table>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+
+
+<!--<div class="wrapper">
+
+    <div class="card">
+        <img img id="profilePic" alt="Profile Pictures" style="width:100%">
+        <a id="nameLink"><h1 id="fullName"></h1></a>
+        <div id="userName"></div>
+        <div id="email"></div>
+        <div id="school"></div>
+        <div id="schoolLocation"></div>
+
+    </div>-->
+    @*<section id="profile">
+            <div class="container" style="height:auto;">
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img id="profilePic" alt="Profile Pictures">
+                        </div>
+                        <div class="col-md-6">
+                            <a id="nameLink"><h1 id="fullName"></h1></a>
+                            <div id="userName"></div>
+                            <div id="email"></div>
+                            <div id="school"></div>
+                            <div id="schoolLocation"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>*@
+
+    <!--<div class="main">
+        <section id="repo">
+            <div class="container">
+                <div class="jumbotron">
+                    <ol id="thePlot">
+                    </ol>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <div class="container" id="history-table">
+                <div id="commitsDiv">
+
+                    <table class="table" style="width:100%;height:100px;">
+                        <tr id="header">
+                        </tr>
+                    </table>
+
+
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+</div>-->
+
+@section scripts
+{
+    <script src="~/Scripts/main.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/about.css">
+}
